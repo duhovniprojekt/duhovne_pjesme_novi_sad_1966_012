@@ -23,6 +23,9 @@
       <clefKeyRightMargin>1.75</clefKeyRightMargin>
       <barNoteDistance>1.2</barNoteDistance>
       <harmonyFretDist>0.5</harmonyFretDist>
+      <useStandardNoteNames>0</useStandardNoteNames>
+      <useGermanNoteNames>1</useGermanNoteNames>
+      <lowerCaseBassNotes>1</lowerCaseBassNotes>
       <defaultFramePadding>0.5</defaultFramePadding>
       <defaultFrameWidth>0.2</defaultFrameWidth>
       <defaultFrameRound>25</defaultFrameRound>
@@ -133,8 +136,8 @@
           </Articulation>
         <Channel>
           <controller ctrl="0" value="0"/>
-          <controller ctrl="32" value="17"/>
-          <program value="52"/>
+          <controller ctrl="32" value="0"/>
+          <program value="0"/>
           <synti>Fluid</synti>
           </Channel>
         </Instrument>
@@ -185,8 +188,8 @@
           </Articulation>
         <Channel>
           <controller ctrl="0" value="0"/>
-          <controller ctrl="32" value="17"/>
-          <program value="52"/>
+          <controller ctrl="32" value="0"/>
+          <program value="0"/>
           <synti>Fluid</synti>
           </Channel>
         </Instrument>
@@ -239,8 +242,8 @@
           </Articulation>
         <Channel>
           <controller ctrl="0" value="0"/>
-          <controller ctrl="32" value="17"/>
-          <program value="52"/>
+          <controller ctrl="32" value="0"/>
+          <program value="0"/>
           <synti>Fluid</synti>
           </Channel>
         </Instrument>
@@ -293,8 +296,76 @@
           </Articulation>
         <Channel>
           <controller ctrl="0" value="0"/>
+          <controller ctrl="32" value="0"/>
+          <program value="0"/>
+          <synti>Fluid</synti>
+          </Channel>
+        </Instrument>
+      </Part>
+    <Part>
+      <Staff id="5">
+        <StaffType group="pitched">
+          <name>stdNormal</name>
+          </StaffType>
+        </Staff>
+      <trackName>Chords</trackName>
+      <Instrument>
+        <longName>Chords</longName>
+        <shortName>Co.</shortName>
+        <trackName>Voice</trackName>
+        <minPitchP>38</minPitchP>
+        <maxPitchP>84</maxPitchP>
+        <minPitchA>41</minPitchA>
+        <maxPitchA>79</maxPitchA>
+        <instrumentId>voice.vocals</instrumentId>
+        <Articulation>
+          <velocity>100</velocity>
+          <gateTime>100</gateTime>
+          </Articulation>
+        <Articulation name="staccatissimo">
+          <velocity>100</velocity>
+          <gateTime>33</gateTime>
+          </Articulation>
+        <Articulation name="staccato">
+          <velocity>100</velocity>
+          <gateTime>50</gateTime>
+          </Articulation>
+        <Articulation name="portato">
+          <velocity>100</velocity>
+          <gateTime>67</gateTime>
+          </Articulation>
+        <Articulation name="tenuto">
+          <velocity>100</velocity>
+          <gateTime>100</gateTime>
+          </Articulation>
+        <Articulation name="marcato">
+          <velocity>120</velocity>
+          <gateTime>67</gateTime>
+          </Articulation>
+        <Articulation name="sforzato">
+          <velocity>150</velocity>
+          <gateTime>100</gateTime>
+          </Articulation>
+        <Articulation name="sforzatoStaccato">
+          <velocity>150</velocity>
+          <gateTime>50</gateTime>
+          </Articulation>
+        <Articulation name="marcatoStaccato">
+          <velocity>120</velocity>
+          <gateTime>50</gateTime>
+          </Articulation>
+        <Articulation name="marcatoTenuto">
+          <velocity>120</velocity>
+          <gateTime>100</gateTime>
+          </Articulation>
+        <Channel>
           <controller ctrl="32" value="17"/>
           <program value="52"/>
+          <synti>Fluid</synti>
+          </Channel>
+        <Channel name="harmony">
+          <controller ctrl="32" value="17"/>
+          <program value="0"/>
           <synti>Fluid</synti>
           </Channel>
         </Instrument>
@@ -305,6 +376,18 @@
         <Text>
           <style>Title</style>
           <text>12</text>
+          </Text>
+        <Text>
+          <style>Composer</style>
+          <text>Johann Rosenmüller, 1694</text>
+          </Text>
+        <Text>
+          <style>Subtitle</style>
+          <text>STRAF MICH NICHT</text>
+          </Text>
+        <Text>
+          <style>Lyricist</style>
+          <text>Johann Georg Albinus (1624-1679)</text>
           </Text>
         </VBox>
       <Measure>
@@ -337,7 +420,8 @@
               </Lyrics>
             <Lyrics>
               <no>4</no>
-              <text>Duhom</text>
+              <syllabic>begin</syllabic>
+              <text>Du</text>
               </Lyrics>
             <Note>
               <pitch>68</pitch>
@@ -367,7 +451,9 @@
               </Lyrics>
             <Lyrics>
               <no>4</no>
-              <text>k</text>
+              <syllabic>end</syllabic>
+              <ticks_f>0/4</ticks_f>
+              <text>hom</text>
               </Lyrics>
             <Note>
               <pitch>68</pitch>
@@ -399,7 +485,7 @@
             <Lyrics>
               <no>4</no>
               <syllabic>begin</syllabic>
-              <text>ne</text>
+              <text>k ne</text>
               </Lyrics>
             <Note>
               <pitch>71</pitch>
@@ -754,7 +840,8 @@
               </Lyrics>
             <Lyrics>
               <no>2</no>
-              <text>k</text>
+              <syllabic>begin</syllabic>
+              <text>k Bo</text>
               </Lyrics>
             <Lyrics>
               <no>3</no>
@@ -784,7 +871,8 @@
               </Lyrics>
             <Lyrics>
               <no>2</no>
-              <text>Bogu</text>
+              <syllabic>end</syllabic>
+              <text>gu</text>
               </Lyrics>
             <Lyrics>
               <no>3</no>
@@ -1369,7 +1457,8 @@
               </Lyrics>
             <Lyrics>
               <no>4</no>
-              <text>k</text>
+              <syllabic>begin</syllabic>
+              <text>k Bo</text>
               </Lyrics>
             <Note>
               <pitch>71</pitch>
@@ -1399,8 +1488,9 @@
               </Lyrics>
             <Lyrics>
               <no>4</no>
-              <syllabic>begin</syllabic>
-              <text>Bo</text>
+              <syllabic>end</syllabic>
+              <ticks_f>0/4</ticks_f>
+              <text>gu</text>
               </Lyrics>
             <Note>
               <pitch>66</pitch>
@@ -1420,17 +1510,32 @@
               </Lyrics>
             <Lyrics>
               <no>2</no>
+              <ticks>240</ticks>
+              <ticks_f>1/8</ticks_f>
               <text>sve</text>
               </Lyrics>
             <Lyrics>
               <no>3</no>
               <syllabic>end</syllabic>
+              <ticks>240</ticks>
+              <ticks_f>1/8</ticks_f>
               <text>tvom</text>
               </Lyrics>
             <Lyrics>
               <no>4</no>
-              <text>gu</text>
+              <ticks>240</ticks>
+              <ticks_f>1/8</ticks_f>
+              <text>će</text>
               </Lyrics>
+            <Spanner type="Slur">
+              <Slur>
+                </Slur>
+              <next>
+                <location>
+                  <fractions>1/8</fractions>
+                  </location>
+                </next>
+              </Spanner>
             <Note>
               <pitch>68</pitch>
               <tpc>22</tpc>
@@ -1438,10 +1543,13 @@
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Lyrics>
-              <no>4</no>
-              <text>će</text>
-              </Lyrics>
+            <Spanner type="Slur">
+              <prev>
+                <location>
+                  <fractions>-1/8</fractions>
+                  </location>
+                </prev>
+              </Spanner>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -1509,7 +1617,7 @@
             <Lyrics>
               <no>4</no>
               <syllabic>middle</syllabic>
-              <text>prje</text>
+              <text>prije</text>
               </Lyrics>
             <Note>
               <pitch>73</pitch>
@@ -1605,7 +1713,7 @@
             <Lyrics>
               <no>3</no>
               <syllabic>middle</syllabic>
-              <text>rvo</text>
+              <text>tvo</text>
               </Lyrics>
             <Lyrics>
               <no>4</no>
@@ -1620,7 +1728,7 @@
           <Chord>
             <durationType>quarter</durationType>
             <Lyrics>
-              <text>ti</text>
+              <text>Ti</text>
               </Lyrics>
             <Lyrics>
               <no>1</no>
@@ -2488,6 +2596,15 @@
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
+            <Spanner type="Slur">
+              <Slur>
+                </Slur>
+              <next>
+                <location>
+                  <fractions>1/8</fractions>
+                  </location>
+                </next>
+              </Spanner>
             <Note>
               <pitch>59</pitch>
               <tpc>19</tpc>
@@ -2495,6 +2612,13 @@
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
+            <Spanner type="Slur">
+              <prev>
+                <location>
+                  <fractions>-1/8</fractions>
+                  </location>
+                </prev>
+              </Spanner>
             <Note>
               <pitch>61</pitch>
               <tpc>21</tpc>
@@ -2937,6 +3061,15 @@
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
+            <Spanner type="Slur">
+              <Slur>
+                </Slur>
+              <next>
+                <location>
+                  <fractions>1/8</fractions>
+                  </location>
+                </next>
+              </Spanner>
             <Note>
               <pitch>52</pitch>
               <tpc>18</tpc>
@@ -2944,6 +3077,13 @@
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
+            <Spanner type="Slur">
+              <prev>
+                <location>
+                  <fractions>-1/8</fractions>
+                  </location>
+                </prev>
+              </Spanner>
             <Note>
               <pitch>49</pitch>
               <tpc>21</tpc>
@@ -3045,6 +3185,371 @@
               <tpc>18</tpc>
               </Note>
             </Chord>
+          </voice>
+        </Measure>
+      </Staff>
+    <Staff id="5">
+      <Measure>
+        <voice>
+          <KeySig>
+            <accidental>4</accidental>
+            </KeySig>
+          <TimeSig>
+            <sigN>4</sigN>
+            <sigD>4</sigD>
+            </TimeSig>
+          <Harmony>
+            <root>18</root>
+            </Harmony>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          <location>
+            <fractions>-1/2</fractions>
+            </location>
+          <Harmony>
+            <root>19</root>
+            </Harmony>
+          <location>
+            <fractions>1/4</fractions>
+            </location>
+          <Harmony>
+            <root>19</root>
+            <name>7</name>
+            </Harmony>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Harmony>
+            <root>21</root>
+            <name>m</name>
+            </Harmony>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          <location>
+            <fractions>-3/4</fractions>
+            </location>
+          <Harmony>
+            <root>19</root>
+            </Harmony>
+          <location>
+            <fractions>1/4</fractions>
+            </location>
+          <Harmony>
+            <root>18</root>
+            <rootCase>1</rootCase>
+            </Harmony>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Harmony>
+            <root>17</root>
+            <rootCase>1</rootCase>
+            </Harmony>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          <location>
+            <fractions>-3/4</fractions>
+            </location>
+          <Harmony>
+            <root>19</root>
+            <rootCase>1</rootCase>
+            <name>7</name>
+            <base>20</base>
+            <baseCase>1</baseCase>
+            </Harmony>
+          <location>
+            <fractions>1/4</fractions>
+            </location>
+          <Harmony>
+            <root>21</root>
+            <name>m</name>
+            </Harmony>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Harmony>
+            <root>17</root>
+            <rootCase>1</rootCase>
+            <name>6</name>
+            </Harmony>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          <location>
+            <fractions>-3/4</fractions>
+            </location>
+          <Harmony>
+            <root>19</root>
+            <rootCase>1</rootCase>
+            </Harmony>
+          <location>
+            <fractions>1/4</fractions>
+            </location>
+          <Harmony>
+            <root>18</root>
+            <rootCase>1</rootCase>
+            </Harmony>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          <location>
+            <fractions>-1/2</fractions>
+            </location>
+          <Harmony>
+            <root>19</root>
+            <rootCase>1</rootCase>
+            </Harmony>
+          <location>
+            <fractions>1/4</fractions>
+            </location>
+          <Harmony>
+            <root>19</root>
+            <name>7</name>
+            </Harmony>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Harmony>
+            <root>21</root>
+            <rootCase>1</rootCase>
+            <name>m</name>
+            </Harmony>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          <location>
+            <fractions>-3/4</fractions>
+            </location>
+          <Harmony>
+            <root>19</root>
+            <rootCase>1</rootCase>
+            </Harmony>
+          <location>
+            <fractions>1/4</fractions>
+            </location>
+          <Harmony>
+            <root>18</root>
+            <rootCase>1</rootCase>
+            </Harmony>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Harmony>
+            <root>17</root>
+            </Harmony>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          <location>
+            <fractions>-3/4</fractions>
+            </location>
+          <Harmony>
+            <root>19</root>
+            <rootCase>1</rootCase>
+            <name>7</name>
+            <base>20</base>
+            <baseCase>1</baseCase>
+            </Harmony>
+          <location>
+            <fractions>1/4</fractions>
+            </location>
+          <Harmony>
+            <root>21</root>
+            <name>m</name>
+            </Harmony>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Harmony>
+            <root>17</root>
+            <rootCase>1</rootCase>
+            <name>6</name>
+            </Harmony>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          <location>
+            <fractions>-3/4</fractions>
+            </location>
+          <Harmony>
+            <root>19</root>
+            <rootCase>1</rootCase>
+            </Harmony>
+          <location>
+            <fractions>1/4</fractions>
+            </location>
+          <Harmony>
+            <root>18</root>
+            <rootCase>1</rootCase>
+            </Harmony>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Harmony>
+            <root>19</root>
+            <rootCase>1</rootCase>
+            </Harmony>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          <location>
+            <fractions>-3/4</fractions>
+            </location>
+          <Harmony>
+            <root>19</root>
+            <rootCase>1</rootCase>
+            <name>7</name>
+            </Harmony>
+          <location>
+            <fractions>1/4</fractions>
+            </location>
+          <Harmony>
+            <root>22</root>
+            </Harmony>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Harmony>
+            <root>21</root>
+            <rootCase>1</rootCase>
+            </Harmony>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          <location>
+            <fractions>-1/2</fractions>
+            </location>
+          <Harmony>
+            <root>20</root>
+            <rootCase>1</rootCase>
+            </Harmony>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Harmony>
+            <root>19</root>
+            <rootCase>1</rootCase>
+            </Harmony>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          <location>
+            <fractions>-1/2</fractions>
+            </location>
+          <Harmony>
+            <root>18</root>
+            </Harmony>
+          <location>
+            <fractions>1/4</fractions>
+            </location>
+          <Harmony>
+            <root>22</root>
+            <name>m</name>
+            </Harmony>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Harmony>
+            <root>18</root>
+            <name>6</name>
+            </Harmony>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          <location>
+            <fractions>-3/4</fractions>
+            </location>
+          <Harmony>
+            <root>20</root>
+            </Harmony>
+          <location>
+            <fractions>1/4</fractions>
+            </location>
+          <Harmony>
+            <root>19</root>
+            <rootCase>1</rootCase>
+            </Harmony>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Harmony>
+            <root>20</root>
+            <name>m</name>
+            </Harmony>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          <location>
+            <fractions>-3/4</fractions>
+            </location>
+          <Harmony>
+            <root>19</root>
+            </Harmony>
+          <location>
+            <fractions>1/4</fractions>
+            </location>
+          <Harmony>
+            <root>21</root>
+            <name>m</name>
+            </Harmony>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Harmony>
+            <root>17</root>
+            <rootCase>1</rootCase>
+            <name>6</name>
+            </Harmony>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          <location>
+            <fractions>-3/4</fractions>
+            </location>
+          <Harmony>
+            <root>19</root>
+            <rootCase>1</rootCase>
+            </Harmony>
+          <location>
+            <fractions>1/4</fractions>
+            </location>
+          <Harmony>
+            <root>18</root>
+            <rootCase>1</rootCase>
+            </Harmony>
           </voice>
         </Measure>
       </Staff>
